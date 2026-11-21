@@ -24,7 +24,6 @@ public class FileSendTask {
             dos.writeUTF(file.getName());
             dos.writeLong(file.length());
             long totalSize = file.length();
-            dos.writeLong(totalSize);
             dos.flush();
 
             byte[] buffer = new byte[4096];
